@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>EleMedia</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--COLORED STATUSBAR-->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4b5169">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#4b5169">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4b5169">
+
+  <!-- Project default CSS files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/lightbox/lightbox.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Megrim|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Own custom CSS files -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left is-transition-push is-closed" id="offCanvasLeft" data-off-canvas="ot56l0-off-canvas"
+      data-auto-focus="false" data-content-scroll="false" aria-hidden="true">
+      <button class="close-button" aria-label="Close menu" type="button" data-close="">
+        <span aria-hidden="true">×</span>
+      </button>
+      <br>
+      <ul class="menu vertical mobile">
+        <li>
+          <a href="index.html" class="nav-link">O nas</a>
+        </li>
+        <li>
+          <a href="oferta.html" class="nav-link">Oferta</a>
+        </li>
+        <li>
+          <a href="galeria.html" class="nav-link">Galeria</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="nav-link active" data-smooth-scroll>Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div class="js-off-canvas-overlay is-overlay-fixed"></div>
+    <div class="off-canvas-content" data-off-canvas-content="" data-content-scroll="false">
+      <div id="top">
+        <div id="contactInfoTop" class="grid-x align-center">
+          <a href="tel:+48513843459" class="cell-block">
+            <i class="fas fa-map-marker-alt"></i> +48 794 574 076
+          </a>
+          <a class="cell-block">
+            <i class="fas fa-phone"></i> Kraków ul. Ks.Meiera 20G
+          </a>
+        </div>
+        <div id="navContainer" class="top-bar">
+
+          <div class="top-bar-left">
+            <a class="navbar-brand" href="index.html">EleMedia</a>
+          </div>
+          <div class="hide-for-large" data-responsive-toggle="responsive-menu" data-open="offCanvasLeft" aria-expanded="false" aria-controls="offCanvasLeft"
+            style="display: none;">
+            <button class="menu-icon" type="button">
+              <i class="fas fa-angle-double-right"></i>Otwórz menu.
+            </button>
+          </div>
+
+          <div class="top-bar-right">
+            <ul class="menu horizontal hide-for-small-only">
+              <li>
+                <a href="index.html" class="nav-link">O nas</a>
+              </li>
+              <li>
+                <a href="oferta.html" class="nav-link">Oferta</a>
+              </li>
+              <li>
+                <a href="galeria.html" class="nav-link">Galeria</a>
+              </li>
+              <li>
+                <a href="#kontakt" class="nav-link active" data-smooth-scroll>Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container content">
+        <div class="grid-x align-middle" id="contactData">
+          <div class="column small-12 medium-4" id="contacts">
+            <div id="companyName">
+              EleMedia
+              <br> Patryk Halota
+            </div>
+            <a id="companyPhone" href="tel:+48794574076">
+              +48 794 574 076
+              <i class="fas fa-phone"></i>
+            </a>
+            <div class="pb-3" id="companyAddress">
+              Kraków ul. Ks.Meiera 20G
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+          </div>
+          <div class="column small-12 medium-8" id="mapResponsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10237.10705820107!2d19.95622586834888!3d50.099826420447485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a8e05299073%3A0x2643f908e4867588!2zS3NpxJlkemEgSsOzemVmYSBNZWllcmEgMjBHLCBLcmFrw7N3!5e0!3m2!1spl!2spl!4v1528135599302"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="grid-x text-center" id="contactForm">
+          <div class="column small-12">
+            <h1 class="display-4">Masz pytania? Napisz do nas!</h1>
+          </div>
+          <div class="column small-12">
+            <form name="contact" id="contact" method="post" action="assets/php/contact.php" role="form">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="form-group grid-x">
+                  <div class="column medium-4 small-12 grid-y">
+                    <div class="form-group form_input small-12">
+                      <label for="name">Imię i nazwisko:
+                        <sup>*</sup>
+                      </label>
+                      <input id="name" class="form-control" name="name" type="text" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group form_input small-12">
+                      <label for="email">Adres e-mail:
+                        <sup>*</sup>
+                      </label>
+                      <input id="email" class="form-control" name="email" type="email" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group form_input small-12">
+                      <label for="temat">Temat:</label>
+                      <input id="temat" class="form-control" name="subject" type="text">
+                    </div>
+                  </div>
+                  <div class="column medium-8 small-12">
+                    <div class="form_input small-12 grid-y" id="message">
+                      <label for="tresc">Treść wiadomości:
+                        <sup>*</sup>
+                      </label>
+                      <textarea id="tresc" class="form-control" name="content" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div id="send" class="form-group grid-x">
+                  <div class="column small-12">
+                    <div class="g-recaptcha" data-sitekey="6Le46DMUAAAAAM3vBvewl4d4XPT6UxvE9f5rKlDJ"></div>
+                    <button type="submit" id="send_form" class="button secondary">
+                      WYŚLIJ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="grid-x">
+        <div class="column small-12 medium-5">
+          <ul id="pages" class="menu horizontal small-vertical">
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="oferta.html">OFERTA</a>
+            </li>
+            <li>
+              <a href="galeria.html">GALERIA</a>
+            </li>
+            <li>
+              <a href="#top" data-smooth-scroll>KONTAKT</a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyrights" class="column small-12 medium-7">
+          Copyright ©
+        </div>
+      </footer>
+    </div>
+
+
+  </div>
+
+
+  <!-- Project default JS files -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/lightbox/lightbox.min.js"></script>
+
+  <!-- JS plugins & own scripts -->
+  <script src="js/plugins.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

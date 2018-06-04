@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>EleMedia</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--COLORED STATUSBAR-->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4b5169">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#4b5169">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4b5169">
+
+  <!-- Project default CSS files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/lightbox/lightbox.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Megrim|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Own custom CSS files -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left is-transition-push is-closed" id="offCanvasLeft" data-off-canvas="ot56l0-off-canvas"
+      data-auto-focus="false" data-content-scroll="false" aria-hidden="true">
+      <button class="close-button" aria-label="Close menu" type="button" data-close="">
+        <span aria-hidden="true">×</span>
+      </button>
+      <br>
+      <ul class="menu vertical mobile">
+        <li>
+          <a href="#about" class="nav-link active" data-smooth-scroll>O nas</a>
+        </li>
+        <li>
+          <a href="oferta.html" class="nav-link">Oferta</a>
+        </li>
+        <li>
+          <a href="galeria.html" class="nav-link">Galeria</a>
+        </li>
+        <li>
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div class="js-off-canvas-overlay is-overlay-fixed"></div>
+    <div class="off-canvas-content" data-off-canvas-content="" data-content-scroll="false">
+      <div id="top">
+        <div id="contactInfoTop" class="grid-x align-center">
+          <a href="tel:+48794574076" class="cell-block">
+            <i class="fas fa-map-marker-alt"></i> +48 794 574 076
+          </a>
+          <a class="cell-block">
+            <i class="fas fa-phone"></i> Kraków ul. Ks.Meiera 20G
+          </a>
+        </div>
+        <div id="navContainer" class="top-bar">
+
+          <div class="top-bar-left">
+            <a class="navbar-brand" href="#">EleMedia</a>
+          </div>
+          <div class="hide-for-large" data-responsive-toggle="responsive-menu" data-open="offCanvasLeft" aria-expanded="false" aria-controls="offCanvasLeft" style="display: none;">
+            <button class="menu-icon" type="button">
+              <i class="fas fa-angle-double-right"></i>Otwórz menu.
+            </button>
+          </div>
+
+          <div class="top-bar-right">
+            <ul class="menu horizontal hide-for-small-only">
+              <li>
+                <a href="#about" class="nav-link active" data-smooth-scroll>O nas</a>
+              </li>
+              <li>
+                <a href="oferta.html" class="nav-link">Oferta</a>
+              </li>
+              <li>
+                <a href="galeria.html" class="nav-link">Galeria</a>
+              </li>
+              <li>
+                <a href="kontakt.html" class="nav-link">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container content fluid">
+          <div class="orbit" role="region" aria-label="Some tv images" data-orbit>
+              <div class="orbit-wrapper">
+                <div class="orbit-controls">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/slider1.jpg" alt="tv1">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/slider2.jpg" alt="tv2">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/slider3.jpg" alt="tv3">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/slider4.jpg" alt="tv4">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+            <div id="about" class="grid-x">
+              <h1 class="column small-12 medium-6 medium-offset-3 text-center">Czym się zajmujemy?</h1>
+              <p class="column small-12 medium-8 medium-offset-2 text-justify">
+                Głównym obszarem naszej działalności jest szeroko pojęty <b>monitoring CCTV-IP</b> oraz <b>instalacje antenowe TV SAT</b>.
+                Zajmujemy się profesjonalnym montażem kamer zarówno IP-analogowych (HD-CVI, HD-TVI, AHD), jak również kamer przemysłowych CCTV.
+                Tworzymy całe <b>systemy alarmowe</b>, jak również prosty monitoring. Montujemy anteny wszelkiego rodzaju
+                od <b>naziemnych</b> po <b>satelitarne</b> oraz regulujemy i ustawiamy już zamontowane anteny.<br>
+                Do naszej działalności można zaliczyć również elektrykę. Tworzymy <b>instalacje elektryczne</b> i pełnimy usługi <b>pogotowia elektrycznego</b>
+                w Krakowie.
+              </p>
+            </div>
+
+      </div>
+      <footer class="grid-x padding-x align-middle">
+              <div class="column small-12 medium-5">
+                  <ul id="pages" class="menu horizontal small-vertical">
+                      <li><a href="#top" data-smooth-scroll>HOME</a></li>
+                      <li><a href="oferta.html">OFERTA</a></li>
+                      <li><a href="galeria.html">GALERIA</a></li>
+                      <li><a href="kontakt.html">KONTAKT</a></li>
+                  </ul>
+              </div>
+              <div id="copyrights" class="column small-12 medium-7">
+                  Copyright ©
+              </div>
+  </footer>
+    </div>
+
+
+  </div>
+
+
+    <!-- Project default JS files -->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+    </script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/lightbox/lightbox.min.js"></script>
+
+    <!-- JS plugins & own scripts -->
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

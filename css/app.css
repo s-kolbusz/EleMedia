@@ -1,0 +1,444 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #20232D;
+    background: #FCFDFB;
+}
+
+.off-canvas{
+    background: #4B5169;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    color: #40455A;
+}
+
+
+/*
+ * FONTS
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Megrim|Poiret+One);
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #c6deb5;
+    color: #20232D;
+    text-shadow: none;
+}
+
+::selection {
+    background: #c6deb5;
+    color: #20232D;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Own custom styles
+   ========================================================================== */
+
+/*
+ * contact info top
+ */
+
+#contactInfoTop{
+    padding: 0.5rem;
+    font-size: 1rem;
+    justify-content: center;
+    background: #4B5169;
+}
+
+#contactInfoTop a {
+    color: #C6DEB5;
+    line-height: 1.25rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    margin: 0rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+#contactInfoTop i{
+    margin: 0 0.5rem;
+}
+
+/*
+ * navigation
+ */
+
+ #navContainer{
+     flex-wrap: wrap;
+     color: rgba(184, 240, 145, 0.7);
+     border-bottom: 1px solid #C6DEB5;
+ }
+
+#navContainer.top-bar, .top-bar ul, .title-bar{
+    font-size: 2rem;
+    font-weight: 300;
+    background: #4B5169;
+}
+
+.navbar-brand, .navbar-brand:active, .navbar-brand:hover, .navbar-brand:focus{
+    color: rgba(184, 240, 145, 1);
+    font-family: "Megrim", cursive;
+    font-size: 4rem;
+    padding-right: 1rem;
+}
+
+@media screen and ( max-width: 39.9375em ){
+    .navbar-brand, .navbar-brand:active, .navbar-brand:hover, .navbar-brand:focus{
+        font-size: 8vh;
+        text-align: center;
+    }
+
+    .top-bar-left{
+        text-align: center;
+    }
+}
+
+.nav-link, .title-bar {
+    color: rgba(184, 240, 145, 1);
+    font-size: 1.75rem;
+    transition: 0.2s ease-in-out;
+    font-family: "Poiret One", cursive;
+}
+
+@media screen and ( max-width: 39.9375em ){
+    .nav-link{
+        text-align: center;
+    }
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus, .nav-link.active,
+footer a:hover, footer a:active, footer a:focus {
+    color: rgba(184, 240, 145, 0.7);
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.menu-icon{
+    color: rgba(184, 240, 145, 1);
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    font-family: "Poiret One", cursive;
+    padding: 0.5rem;
+}
+
+.menu-icon i{
+    padding-right: 0.5rem;
+}
+
+.menu-icon:hover, .menu-icon:focus, .menu-icon:active{
+    color: rgba(184, 240, 145, 0.7);
+}
+
+.menu-icon::after, .menu-icon:hover::after{
+    background: none;
+    box-shadow: none;
+}
+
+
+.menu.mobile {
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.menu.hide-for-small-only {
+    justify-content: flex-end;
+}
+
+
+/*
+ * Content
+*/
+.content {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+/*
+ * Orbit carousel
+*/
+
+.orbit{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 3.6rem;
+}
+
+.orbit-wrapper, .orbit-container, .orbit-slide, .orbit-figure{
+    height: 100%;
+}
+
+.orbit-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+ * About
+*/
+
+#about {
+    margin-top: 1rem;
+}
+
+#about h1{
+    font-size: 8vh;
+}
+
+
+/*
+ * Oferta
+*/
+
+.callout{
+    border-color: #4B5169;
+    padding: 0;
+}
+
+.description{
+    background: #c6deb5;
+    padding: 0.75rem;
+}
+
+.description .button{
+    color: #c6deb5;
+    background: #4B5169;
+}
+
+.description .button:hover, .description .button:active, .description .button:focus{
+    background: rgba(75, 81, 105, 0.85);
+}
+
+.image{
+    background: #4B5169;
+}
+
+.image img{
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and ( max-width: 39.9375em){
+    .image img{
+        width: 100%;
+        min-height: 25vh;
+    }
+}
+
+
+
+/*
+ * Galeria
+*/
+
+#gallery h1{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px){
+    #gallery h1{
+        font-size: 2rem;
+    }
+}
+
+#gallery div {
+    padding: 0.8rem;
+}
+
+#gallery .gallery-item {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 75.19% 0 0 0;
+}
+
+#gallery .gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+
+#gallery .gallery-item img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+
+
+
+/*
+ * Kontakt
+*/
+
+#contacts{
+    margin-bottom: 1.5rem;
+}
+
+#companyPhone,
+#companyPhone:hover,
+#companyPhone:active,
+#companyPhone:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Responsive contact map */
+
+#mapResponsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+#mapResponsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* contact form */
+
+.form-group{
+    margin-bottom: 0;
+}
+
+
+.form_input label{
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.form_input label sup{
+    color: #FF0000;
+}
+
+.form_input input, .form_input textarea{
+    color: #000000;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+.form_input input:focus, .form_input textarea:focus{
+    background: #F8F7F5;
+    border: solid 1px #4B5169;
+}
+
+#message {
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+#message #tresc {
+    height: 50%;
+    min-height: 10rem;
+    resize: none;
+}
+
+
+@media screen and ( max-width: 39.9375em ) {
+
+
+    #send div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rc-imageselect, .g-recaptcha {
+        transform: scale(0.86);
+        -webkit-transform: scale(0.86);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        margin: auto;
+    }
+
+}
+/*
+ * FOOTER
+*/
+
+footer {
+    color: rgba(184, 240, 145, 1);
+    text-decoration: none;
+    border-top: 1px solid #C6DEB5;
+    background: #4B5169;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-family: "Poiret One", cursive;
+}
+
+footer a {
+    color: rgba(184, 240, 145, 1);
+    padding-left: 0.75rem;
+    transition: 0.2s ease-in-out;
+}
+
+#copyrights {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+
+@media screen and ( max-width: 39.9375em ) {
+    #pages{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #pages a{
+        padding: 0.5rem;
+    }
+    #copyrights {
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+}
