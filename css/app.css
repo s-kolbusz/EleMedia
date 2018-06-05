@@ -262,6 +262,7 @@ footer a:hover, footer a:active, footer a:focus {
     .image img{
         width: 100%;
         min-height: 25vh;
+        max-height: 50vh;
     }
 }
 
