@@ -8,8 +8,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!--COLORED STATUSBAR-->
@@ -21,15 +21,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#4b5169">
 
   <!-- Project default CSS files -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/lightbox/lightbox.min.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/foundation.css">
+  <link rel="stylesheet" href="../css/lightbox/lightbox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Megrim|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
 
   <!-- Own custom CSS files -->
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
@@ -42,22 +42,22 @@
       <br>
       <ul class="menu vertical mobile">
         <li>
-          <a href="index.html" class="nav-link">O nas</a>
+          <a href="../index.html" class="nav-link">O nas</a>
         </li>
         <li>
-          <a href="#oferta" class="nav-link active" data-smooth-scroll>Oferta</a>
+          <a href="../oferta.html" class="nav-link active">Oferta</a>
         </li>
         <li>
-          <a href="galeria.html" class="nav-link">Galeria</a>
+          <a href="../galeria.html" class="nav-link">Galeria</a>
         </li>
         <li>
-          <a href="kontakt.html" class="nav-link">Kontakt</a>
+          <a href="../kontakt.html" class="nav-link">Kontakt</a>
         </li>
       </ul>
     </div>
     <div class="js-off-canvas-overlay is-overlay-fixed"></div>
-    <div class="off-canvas-content" data-off-canvas-content="" data-content-scroll="false">
-      <div id="top">
+    <div class="off-canvas-content grid-x" data-off-canvas-content="" data-content-scroll="false">
+      <div id="top" class="cell small-12">
         <div id="contactInfoTop" class="grid-x align-center">
           <a href="tel:+48794574076" class="cell-block">
             <i class="fas fa-map-marker-alt"></i> +48 794 574 076
@@ -69,7 +69,7 @@
         <div id="navContainer" class="top-bar">
 
           <div class="top-bar-left">
-            <a class="navbar-brand" href="index.html">EleMedia</a>
+            <a class="navbar-brand" href="../index.html">EleMedia</a>
           </div>
           <div class="hide-for-large" data-responsive-toggle="responsive-menu" data-open="offCanvasLeft" aria-expanded="false" aria-controls="offCanvasLeft"
             style="display: none;">
@@ -81,82 +81,47 @@
           <div class="top-bar-right">
             <ul class="menu horizontal hide-for-small-only">
               <li>
-                <a href="index.html" class="nav-link">O nas</a>
+                <a href="../index.html" class="nav-link">O nas</a>
               </li>
               <li>
-                <a href="#oferta" class="nav-link active" data-smooth-scroll>Oferta</a>
+                <a href="../oferta.html" class="nav-link active">Oferta</a>
               </li>
               <li>
-                <a href="galeria.html" class="nav-link">Galeria</a>
+                <a href="../galeria.html" class="nav-link">Galeria</a>
               </li>
               <li>
-                <a href="kontakt.html" class="nav-link">Kontakt</a>
+                <a href="../kontakt.html" class="nav-link">Kontakt</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="grid-container content fluid">
-        <h1>Do naszej oferty należy:</h1>
-        <div class="grid-x">
-          <div class="column small-8 small-offset-2 large-6 large-offset-3 grid-y">
-            <div class="callout grid-x">
-              <div class="column small-12 small-order-2 medium-7 description">
-                <h1>Monitoring CCTV i Systemy Alarmowe</h1>
-                <p>
+      <a id="back-button" href="../oferta.html" class="button align-middle"><span><i class="fas fa-arrow-left"></i> Powrót</span></a>
+      <div class="grid-container content text-justify">
+        <h1>Elektryka</h1>
+        <p>
+            Tworzymy sieci elektryczne, naprawiamy usterki, oraz pełnimy usługi pogotowia elektrycznego.
+        </p>
 
-                </p>
-                <a href="oferta/monitoring.html" class="button">Sprawdź ofertę!</a>
-              </div>
-              <div class="column small-12 small-order-1 medium-5 image">
-                <img src="img/slider1.jpg" alt="kamery" />
-              </div>
-            </div>
-            <div class="callout grid-x">
-              <div class="column small-12 medium-5 image">
-                <img src="img/slider4.jpg" alt="anteny" />
-              </div>
-              <div class="column small-12 medium-7 description">
-                <h1>Instalacje antenowe i TV SAT</h1>
-                <p>
-
-                </p>
-                <a href="oferta/anteny.html" class="button">Sprawdź ofertę!</a>
-              </div>
-            </div>
-            <div class="callout grid-x">
-              <div class="column small-12 small-order-2 medium-7 description">
-                <h1>Elektryka</h1>
-                <p>
-
-                </p>
-                <a href="oferta/elektryka.html" class="button">Sprawdź ofertę!</a>
-              </div>
-              <div class="column small-12 small-order-1 medium-5 image">
-                <img src="img/elektryka.jpg" alt="elektryka" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <footer class="grid-x">
-        <div class="column small-12 medium-5">
+      <footer class="grid-x cell small-12 align-self-bottom">
+        <div class="cell small-12 medium-5">
           <ul id="pages" class="menu horizontal small-vertical">
             <li>
-              <a href="index.html">HOME</a>
+              <a href="../index.html">HOME</a>
             </li>
             <li>
-              <a href="#top" data-smooth-scroll>OFERTA</a>
+              <a href="../oferta.html">OFERTA</a>
             </li>
             <li>
-              <a href="galeria.html">GALERIA</a>
+              <a href="../galeria.html">GALERIA</a>
             </li>
             <li>
-              <a href="kontakt.html">KONTAKT</a>
+              <a href="../kontakt.html">KONTAKT</a>
             </li>
           </ul>
         </div>
-        <div id="copyrights" class="column small-12 medium-7">
+        <div id="copyrights" class="cell small-12 medium-7">
           Copyright ©
         </div>
       </footer>
@@ -167,20 +132,20 @@
 
 
   <!-- Project default JS files -->
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')
 
   </script>
-  <script src="js/vendor/foundation.min.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/lightbox/lightbox.min.js"></script>
+  <script src="../js/vendor/foundation.min.js"></script>
+  <script src="../js/vendor/what-input.js"></script>
+  <script src="../js/lightbox/lightbox.min.js"></script>
 
   <!-- JS plugins & own scripts -->
-  <script src="js/plugins.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/app.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

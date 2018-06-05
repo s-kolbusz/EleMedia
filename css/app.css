@@ -19,6 +19,10 @@ html {
     background: #4B5169;
 }
 
+.off-canvas-content.grid-x{
+    min-height: 100vh;
+}
+
 h1{
     font-family: 'Poiret One', cursive;
     color: #40455A;
@@ -189,6 +193,10 @@ footer a:hover, footer a:active, footer a:focus {
     font-size: 2.5vh;
 }
 
+#back-button{
+    display: flex;
+}
+
 /*
  * Orbit carousel
 */
@@ -231,13 +239,14 @@ footer a:hover, footer a:active, footer a:focus {
     padding: 0.75rem;
 }
 
-.description .button{
+.button{
     color: #c6deb5;
     background: #4B5169;
 }
 
-.description .button:hover, .description .button:active, .description .button:focus{
+.button:hover, .button:active, .button:focus{
     background: rgba(75, 81, 105, 0.85);
+    color: #c6deb5;
 }
 
 .image{
