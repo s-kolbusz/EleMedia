@@ -212,10 +212,6 @@ footer a:hover, footer a:active, footer a:focus {
  * About
 */
 
-#about {
-    margin-top: 1rem;
-}
-
 #about h1{
     font-size: 8vh;
 }
